@@ -7,7 +7,7 @@
 const SEQUENCE_LENGTH   = 30;          // จำนวนเฟรมต่อ 1 ท่า
 const MIN_CONFIDENCE    = 0.70;        // threshold ขั้นต่ำ
 const COOLDOWN_MS       = 1500;        // ms หลังทำนายสำเร็จ (ป้องกันซ้ำ)
-const API_ENDPOINT      = '/predict_sequence'; // แก้ให้ตรงกับ backend ของคุณ
+const API_ENDPOINT = 'https://asl-api-yoo3.onrender.com/predict_sequence'; // แก้ให้ตรงกับ backend ของคุณ
 
 // ── Internal State ──────────────────────────────────────────
 let sequenceBuffer   = [];   // [[63], [63], ...] สูงสุด SEQUENCE_LENGTH เฟรม
